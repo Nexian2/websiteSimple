@@ -1,0 +1,323 @@
+
+/* Animasi masuk (fade-in + slide-up) */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header animasi */
+header {
+    background-color: #0099ff;
+    color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Main konten animasi */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Gambar smooth hover */
+figure img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 2px 20px 20px rgb(0, 0, 0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 25px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Tombol dengan animasi hover */
+#commentForm button {
+    background-color: #0079bf;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#commentForm button:hover,
+#commentForm button:focus {
+    background-color: #005a8c;
+    transform: translateY(-3px);
+}
+
+/* Komentar muncul dengan animasi */
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.comment:nth-child(1) { animation-delay: 0.2s; }
+.comment:nth-child(2) { animation-delay: 0.4s; }
+.comment:nth-child(3) { animation-delay: 0.6s; }
+
+/* Footer animasi */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 40px;
+    padding: 15px 0;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #c5c5c534;
+    color: #333;
+}
+header {
+    background-color: #0099ff;
+    color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #000000;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 6px;
+}
+
+article h3 {
+    margin-top: 25px;
+    color: #000000;
+}
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+ul, ol {
+    margin: 10px 0 10px 20px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 2px 20px 20px rgb(0, 0, 0);
+}
+
+.highlight {
+    background: #ffffff;
+    padding: 8px 12px;
+    border-left: 4px solid #0687ff;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+#comments-section {
+    background-color: #ffffff;
+    border: 2px solid #0079bf; 
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 121, 191, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#comments-section > h2 {
+    color: #0079bf;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+#commentForm input[type="text"],
+#commentForm textarea {
+    border: 1.5px solid #0079bf;
+    border-radius: 6px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+#commentForm input[type="text"]:focus,
+#commentForm textarea:focus {
+    border-color: #005a8c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 90, 140, 0.5);
+}
+
+#commentForm button {
+    background-color: #0079bf;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#commentForm button:hover,
+
+#commentForm button:focus {
+    background-color: #005a8c;
+    outline: none;
+}
+
+#comments {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.comment .comment-header {
+    font-weight: 700;
+    color: #0079bf;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.comment p {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.comment time {
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 40px;
+    padding: 15px 0;
+}
+.tugas-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tugas-card {
+  display: block;
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background: #f9f9f9;
+  border: 2px solid #0079bf;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.tugas-card h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #0079bf;
+}
+
+.tugas-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.tugas-card:hover {
+  background: #0079bf;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 121, 191, 0.2);
+}
+
+.tugas-card:hover h4,
+.tugas-card:hover p {
+  color: #fff;
+}
+
+/*responsive */  
+@media (max-width: 768px) {
+header {
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    margin: 10px;
+    padding: 15px;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+article h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+}
+
+}
